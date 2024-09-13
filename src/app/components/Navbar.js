@@ -1,5 +1,4 @@
-"use client"; // Add this to use client-side functionality
-
+"use client";
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -8,7 +7,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="bg-gray-100 text-gray-700 shadow-md z-20 relative">
+    <header className="lg:bg-gray-100 bg-transparent text-gray-700 shadow-md z-20 relative">
       <div className="flex items-center justify-between p-4 lg:px-8 w-full">
         <div className="flex-shrink-0">
           <Link href="/">
@@ -49,7 +48,6 @@ export default function Navbar() {
               Signup
             </Link>
           </div>
-
         </nav>
 
         {/* Mobile Menu Button */}
